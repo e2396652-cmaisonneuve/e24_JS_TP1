@@ -1,0 +1,51 @@
+.filters-container {
+  min-width: 15rem;
+}
+
+.filtres {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  justify-content: space-between;
+  text-align: left;
+  padding: 1rem;
+  color: black;
+}
+
+.filtres button {
+  border: 0px;
+  font-size: 1.2rem;
+  font-family: "Manrope", sans-serif;
+  font-weight: 700;
+  padding: 0.5rem;
+  background-color: transparent;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  color: black;
+
+  &:hover {
+    background-color: #e3061511;
+    color: black;
+  }
+
+  &[aria-selected="true"] {
+    background-color: #e30613;
+    color: white;
+    text-decoration: underline;
+  }
+}
+
+/* reference: https://codepen.io/ven3num/pen/eYbqZMV */
+
+.filtres {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 15px;
+  justify-content: space-between;
+  text-align: left;
+  padding: 1rem;
+  color: black;
+}

@@ -1,0 +1,54 @@
+.modale-verrou {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.modale__conteneur {
+    position: fixed;
+    z-index: 5000;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.644);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    & .modale__carte {
+        background-color: white;
+        border-radius: 5px;
+        height: fit-content;
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        gap:1rem;
+
+    }
+
+    & .modale__contenu {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        padding: 1rem;
+        gap: 15px;
+        text-align: left;
+        line-height: 1.3rem;
+
+    }
+
+    &.invisible {
+        display: none;
+    }
+}
